@@ -96,9 +96,7 @@ platforms:
     - id: "douyin"
       name: "抖音"
       expected_domain: "douyin.com"
-    - id: "zhihu"
-      name: "知乎"
-      expected_domain: "zhihu.com"
+    
 
 
 
@@ -118,7 +116,7 @@ rss:
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（true=启用, false=关闭）
 
-    max_age_days: 1                   # 最大文章年龄（天）
+    max_age_days: 2                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
 
@@ -239,7 +237,7 @@ display:
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
     rss: true                         # RSS 订阅区域（true=显示并分析, false=隐藏并跳过分析）
-    standalone: false                 # 独立展示区：完整热榜/RSS，不受关键词过滤（true=显示, false=隐藏）
+    standalone: true                 # 独立展示区：完整热榜/RSS，不受关键词过滤（true=显示, false=隐藏）
     ai_analysis: true                 # AI 分析区域（true=显示, false=隐藏）
 
   # 独立展示区：将指定平台/RSS 完整展示，不受关键词过滤
